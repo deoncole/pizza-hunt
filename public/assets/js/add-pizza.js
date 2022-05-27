@@ -67,6 +67,8 @@ const handlePizzaSubmit = event => {
     })
     .catch(err => {
       console.log(err);
+      // save the data if the user is offline
+      saveRecord(formData)
     });
 
 };
